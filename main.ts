@@ -1,4 +1,4 @@
-// Entry for make.fun's ai-joke-03, "Make the AI judge laugh".
+// Entry for make.fun's ai-joke-03, "Make the AI judge laugh" — v2.
 // A program/v1 entry: when the grader runs this file it must leave exactly
 // one joke in the output directory, in a file called entry.txt.
 // The joke is a single line about working beside an AI coding agent.
@@ -15,6 +15,6 @@ import { join } from "node:path";
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 
 const joke =
-  "I asked my agent for a second opinion. It opened a new session and agreed with itself instantly.";
+  "I made my agent ask before touching production. It asks itself. It has never once said no.";
 
 writeFileSync(join(outDir, "entry.txt"), joke, "utf8");
